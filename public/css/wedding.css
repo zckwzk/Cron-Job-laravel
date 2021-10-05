@@ -1,4 +1,9 @@
-/* body.preloader-site {
+@font-face {
+    font-family: "Brightholiday";
+    src: url("../public/assets/fonts/Brightholiday.ttf");
+}
+
+body.preloader-site {
     overflow: hidden;
 }
 
@@ -19,7 +24,7 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 120px;
-} */
+}
 .hero {
     background-image: url(https://picsum.photos/id/25/1920/1080);
     background: linear-gradient(
@@ -37,7 +42,8 @@
 }
 
 .hero .title {
-    font-family: "Rouge Script", sans-serif;
+    font-family: "Dancing Script";
+
     font-weight: 700;
     transform: rotate(-2deg);
     font-size: 5rem;
@@ -57,7 +63,7 @@
 }
 
 .hero .hero-foot {
-    height: 50px;
+    height: 60px;
     background: white;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
 }
@@ -99,4 +105,87 @@
     color: #996e6d;
     transition: all 0.2s ease-in-out;
     border-bottom: 2px solid #c28285;
+}
+
+.main-content .section-light {
+    padding: 80px 40px;
+}
+
+.main-content .section-light.regular-section {
+    padding-bottom: 80px;
+}
+
+.main-content .section-light.regular-section .is-larger {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 599px) {
+    .main-content .section-light.regular-section .about-links {
+        text-align: center;
+    }
+}
+
+.main-content .section-light.regular-section .right-image img {
+    border-radius: 11px;
+    margin: 20px;
+    box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+}
+
+@media (max-width: 599px) {
+    .main-content .section-light.regular-section .right-image img {
+        margin: auto;
+    }
+}
+
+@media (min-width: 599px) {
+    .textarea-container {
+        width: 60%;
+        margin: 20px auto;
+    }
+}
+
+.textarea-container {
+    margin: 2.5rem auto;
+}
+
+.textarea {
+    margin-top: 2rem;
+}
+
+.bismillah {
+    margin: 25px;
+    display: inline-block;
+    max-height: 50px;
+    vertical-align: middle;
+}
+
+.nama-lengkap {
+    font-family: "Dancing Script";
+    color: #996e6d;
+    font-size: 3.5rem;
+    letter-spacing: 0px;
+    padding-bottom: 6px;
+    line-height: 3.7rem;
+    margin-top: 2rem;
+}
+
+.ampersand {
+    font-size: 5rem;
+    font-family: "Dancing Script";
+    color: #996e6d;
+    line-height: 5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bodytext {
+    font-size: 18px;
+}
+
+.space40px {
+    height: 40px;
+}
+
+.space24px {
+    height: 24px;
 }

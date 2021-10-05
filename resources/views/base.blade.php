@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <!-- Styles -->
 
-
     <style>
         body {
             font-family: 'Nunito', sans-serif;
@@ -25,11 +24,32 @@
 
     </style>
     @livewireStyles
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 </head>
 
 <body class="antialiased">
 
+    <div class="preloader-wrapper">
+        <div class="preloader">
+            <img src="{{ asset('assets/images/favicon.png') }}" alt="Flower" />
+        </div>
+    </div>
 
+    @yield('content')
+
+    <script>
+        // Preloader
+        $(document).ready(function($) {
+            $(".preloader-wrapper").fadeOut();
+            $("body").removeClass("preloader-site");
+        });
+        $(window).load(function() {
+            var Body = $("body");
+            Body.addClass("preloader-site");
+        });
+    </script>
     @livewireScripts
 </body>
 
